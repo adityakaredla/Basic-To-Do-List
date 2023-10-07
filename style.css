@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap');
+
+*{
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    overflow-x: hidden;
+    width:100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#153677,#4e085f);
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Poppins',sans-serif;
+
+}
+
+.app-container{
+    /* background-image: url("background.jpg"); */
+    background: whitesmoke;
+    width:100%;
+    max-width: 520px;
+    margin:100px auto 30px;
+    border-radius: .7rem;
+    padding: 2rem 3rem;
+}
+
+.app-container h2{
+    text-align: center;
+}
+
+.input-container{
+    background: #b8b9bb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 3rem;
+}
+
+#input-box{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: .7rem 1rem;
+}
+
+#button{
+    border: none;
+    border-radius: 3rem;
+    outline: none;
+    background: #2159ca;
+    padding:.7rem 1.5rem;
+    color: aliceblue;
+    font-weight: 500;
+}
+.list-container{
+    padding: .7rem 0rem .7rem;
+}
+.list-container li{
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 3rem;
+    margin: 1rem 0rem 1.5rem;
+    padding: .7rem 1rem;
+    background: #4d6eaf;
+    list-style: none;
+    user-select:none;
+    cursor:pointer;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+}
+p{
+    margin:0rem;
+}
+.checked{ 
+    text-decoration: line-through;
+}
+
+.footer{
+    justify-content: center;
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    align-items: center;
+    flex-shrink: 0;
+    color: antiquewhite;
+}
+
+.footer .icons a{
+    margin-top: .5rem;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    color: antiquewhite;
+    font-size: 2rem;
+}
+
+
+@media (max-width:500px){
+    
+    .app-container{
+        /* background-image: url("background.jpg"); */
+        max-width: 400px;
+    }
+}
+
+@media (max-width:400px){
+    
+    .app-container h2{
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .app-container{
+        /* background-image: url("background.jpg"); */
+        
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #input-box{
+        width: 80%;
+        font-size: .5rem;
+    }
+
+    #button{
+        font-size: .5rem;
+    }
+    .list-container li{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: .5rem;
+        margin-bottom: 1rem;
+        padding: .7rem 1rem;
+    }
+
+    .list-container{
+        width:100%;
+    }
+    
+    p{
+        margin:0rem;
+    }
+
+    .footer{
+        font-size: .52rem;
+    }
+
+    .footer .icons a{
+        font-size: 1rem;
+    }
+    
+}
+
+
+@media (max-width:350px){
+
+    .app-container h2{
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .app-container{
+        /* background-image: url("background.jpg"); */
+        
+        max-width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #input-box{
+        width: 80%;
+        font-size: .5rem;
+    }
+
+    #button{
+        font-size: .5rem;
+    }
+    .list-container li{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: .5rem;
+        margin-bottom: 1rem;
+        padding: .7rem 1rem;
+    }
+
+    .list-container{
+        width:100%;
+    }
+    
+    p{
+        margin:0rem;
+    }
+
+    .footer{
+        font-size: .52rem;
+    }
+
+    .footer .icons a{
+        font-size: 1rem;
+    }
+}
+
+
